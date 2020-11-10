@@ -1,0 +1,597 @@
+.lastmessage{
+    margin-top: 20px;
+    color: rgb(129, 129, 129);
+    font-size: x-large;
+    font-family: Abel;
+}
+
+
+
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.footer ul.foot{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.footer ul.foot li.scent{
+    float: left;
+}
+
+
+
+
+
+.footer ul.foot li.buton a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Allerta Stencil";
+}
+
+
+.footer ul.foot li.buton a:hover:not(.active) {
+    text-decoration: underline;
+    text-shadow: -1px -1px 1px #aaa,
+    0px 4px 1px rgb(211, 211, 211),
+    4px 4px 5px rgb(184, 184, 184),
+    0px 0px 7px rgb(102, 102, 102);;
+}
+
+
+
+
+
+
+.footer .twitter{
+    background: #ffffff00;
+    
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    margin: 10px 5px;
+    font-size: xx-large;
+}
+.footer .instagram{
+    background: #ffffff00;
+    
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    margin: 10px 5px;
+    font-size: xx-large;
+}
+.footer .youtube{
+    background-color: ffffff00;
+    
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    margin: 10px 5px;
+    font-size: xx-large;
+}
+
+.fa{
+    color: white;
+}
+
+div.socialways a:hover:not(.active){
+    text-shadow: 0 1px #808d93,
+       	              -1px 0 #cdd2d5,
+       	              -1px 2px #808d93,
+       	              -2px 1px #cdd2d5,
+       	              -2px 3px #808d93,
+       	              -3px 2px #cdd2d5,
+       	              -3px 4px #808d93,
+       	              -4px 3px #cdd2d5,
+       	              -4px 5px #808d93,
+       	              -5px 4px #cdd2d5,
+       	              -5px 6px #808d93,
+       	              -6px 5px #cdd2d5,
+       	              -6px 7px #808d93,
+       	              -7px 6px #cdd2d5,
+       	              -7px 8px #808d93,
+       	              -8px 7px #cdd2d5;
+}
+
+.nav ul.icnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff00;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+
+li.icon {
+    float: left;
+}
+
+li.buttons{
+    float: right;
+}
+
+
+li.buttons a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Allerta Stencil";
+    font-size: x-large;
+}
+
+
+li a:hover:not(.active) {
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+
+.header table.sub_header{
+    background: url(https://i.redd.it/99b2b93sytf21.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+
+
+.car-tittle{
+    font-family: Audiowide;
+    color: silver;
+    text-align: center;
+    font-size: 60px;
+    margin: 5px;
+    margin-top: 40px;
+    letter-spacing: 10px;
+    font-weight: lighter;
+    text-decoration-line: underline overline;
+    /* text-decoration-style: double; */
+    text-decoration-color: gray;
+    text-decoration-thickness: 5px;
+}
+
+
+.car .button a{
+    color: rgb(230, 230, 230);
+    background-color: rgba(255, 255, 255, 0.18);
+    padding: 10px;
+    font-size: 25px;
+    margin-left: 60px;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: Archivo Narrow;
+}
+
+
+
+
+.car-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}  
+
+.car{
+    background: transparent;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0px 25px;
+    padding: 30px 70px;
+}
+
+
+.car .image{
+    display: inline-block;
+    width: 400px;
+    height: 150px;
+    margin-bottom: 0;
+    z-index: 1;
+    position: relative;
+}
+
+
+.car .image::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    background: rgb(190, 250, 26);
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.2;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+
+
+.car .image::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(190, 250, 26);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.car .image img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+
+
+.car:hover .image img{
+    transform: scale(1.3);
+}
+
+
+.car .car-content{
+    margin-bottom: 50px;
+}
+
+.car .name{
+    font-size: 22px;
+    font-weight: 200;
+    color: rgba(76, 206, 43, 0.849);
+    letter-spacing: 1px;
+    margin-bottom: 90%;
+    font-family: Audiowide;
+    text-align: center;
+}
+
+
+.car .features{
+    display: ruby;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-family: Audiowide;
+    text-align: center;
+    color: white;
+}
+
+.car .speed{
+    display: block;
+    font-size: 20px;
+    color: rgba(76, 206, 43, 0.849);
+    margin: 2px;
+    text-decoration: underline white;
+}
+
+.car .range{
+    display: block;
+    font-size: 20px;
+    color: crimson;
+    margin: 2px;
+    text-decoration: underline white;
+}
+
+.car .price{
+    display: block;
+    font-size: 20px;
+    color: gold;
+    margin: 2px;
+    text-decoration: underline white;
+}
+
+.car.car-content .name{
+    align-self: initial;
+}
+
+.car .AreaofComparison{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.18);
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+    align-items: center;
+}
+
+.car:hover .AreaofComparison{
+    bottom: 0px;
+}
+
+
+.car:hover .name{
+    text-decoration: underline;
+}
+
+
+
+.car .AreaofComparison li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    width: 50%;
+}
+
+
+
+
+@media(max-width: 720px){
+    .car-container{
+        flex-direction: column;
+    }
+    .car{
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+.message{
+    padding: 100px 10%;
+    text-align: center;
+    background: url(https://media0.giphy.com/media/xUn3CdoxxuzV5J6X5u/source.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: fit-content;
+    width: auto;
+    vertical-align: center;
+}
+
+.message .line{
+    font-size: 70px;
+    font-family: Abel;
+    color: white;
+}
+
+
+
+.bike-tittle{
+    font-family: Audiowide;
+    color: silver;
+    text-align: center;
+    font-size: 60px;
+    margin: 5px;
+    margin-top: 100px;
+    letter-spacing: 10px;
+    font-weight: lighter;
+    text-decoration-line: underline overline;
+    /* text-decoration-style: double; */
+    text-decoration-color: gray;
+    text-decoration-thickness: 5px;
+}
+
+
+
+
+.bike .button a{
+    color: rgb(230, 230, 230);
+    background-color: rgba(255, 255, 255, 0.18);
+    padding: 10px;
+    font-size: 25px;
+    margin-left: 60px;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: Archivo Narrow;
+}
+
+
+
+
+.bike-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}  
+
+.bike{
+    background: transparent;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0px 25px;
+    padding: 30px 70px;
+}
+
+
+.bike .image{
+    display: inline-block;
+    width: 400px;
+    height: 150px;
+    margin-bottom: 0;
+    z-index: 1;
+    position: relative;
+}
+
+
+.bike .image::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    background: rgb(190, 250, 26);
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.2;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+
+
+.bike .image::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(190, 250, 26);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.bike .image img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+    align-self: center;
+}
+
+
+.bike:hover .image img{
+    transform: scale(1.3);
+}
+
+
+.bike .car-content{
+    margin-bottom: 50px;
+}
+
+.bike .name{
+    font-size: 22px;
+    font-weight: 200;
+    color: rgba(76, 206, 43, 0.849);
+    letter-spacing: 1px;
+    margin-bottom: 105%;
+    font-family: Audiowide;
+    text-align: center;
+}
+
+
+.bike .features{
+    display: ruby;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-family: Audiowide;
+    text-align: center;
+    color: white;
+}
+
+.bike .speed{
+    display: block;
+    font-size: 20px;
+    color: rgba(76, 206, 43, 0.849);
+    margin: 2px;
+    text-decoration: underline white;
+}
+
+.bike .range{
+    display: block;
+    font-size: 20px;
+    color: crimson;
+    margin: 2px;
+    text-decoration: underline white;
+}
+
+.bike .price{
+    display: block;
+    font-size: 20px;
+    color: gold;
+    margin: 2px;
+    text-decoration: underline white;
+}
+
+.bike.bike-content .name{
+    align-self: initial;
+}
+
+.bike .AreaofComparison{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.18);
+    position: absolute;
+    bottom: -180px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.bike:hover .AreaofComparison{
+    bottom: 0px;
+}
+
+
+.bike:hover .name{
+    text-decoration: underline;
+}
+
+
+
+.bike .AreaofComparison li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    width: 50%;
+}
+
+
+
+
+@media(max-width: 720px){
+    .bike-container{
+        flex-direction: column;
+    }
+    .bike{
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,153 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.bgimg {
+    background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+  
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+  
+
+  
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+  hr {
+    margin: auto;
+    width: 40%;
+}
+
+
+
+
+
+
+
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.footer ul.foot{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.footer ul.foot li.scent{
+    float: left;
+}
+
+
+
+
+
+.footer ul.foot li.button a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Allerta Stencil";
+}
+
+
+.footer ul.foot li.button a:hover:not(.active) {
+    text-decoration: underline;
+    text-shadow: -1px -1px 1px #aaa,
+    0px 4px 1px rgb(211, 211, 211),
+    4px 4px 5px rgb(184, 184, 184),
+    0px 0px 7px rgb(102, 102, 102);;
+}
+
+
+
+
+
+
+.footer .twitter{
+    background: #ffffff00;
+    color: whitesmoke;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    margin: 10px 5px;
+    font-size: xx-large;
+}
+.footer .instagram{
+    background: #ffffff00;
+    color: whitesmoke;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    margin: 10px 5px;
+    font-size: xx-large;
+}
+.footer .youtube{
+    background-color: ffffff00;
+    color: black;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    margin: 10px 5px;
+    font-size: xx-large;
+}
+
+.fa{
+    color: white;
+}
+
+div.socialways a:hover:not(.active){
+    text-shadow: 0 1px #808d93,
+       	              -1px 0 #cdd2d5,
+       	              -1px 2px #808d93,
+       	              -2px 1px #cdd2d5,
+       	              -2px 3px #808d93,
+       	              -3px 2px #cdd2d5,
+       	              -3px 4px #808d93,
+       	              -4px 3px #cdd2d5,
+       	              -4px 5px #808d93,
+       	              -5px 4px #cdd2d5,
+       	              -5px 6px #808d93,
+       	              -6px 5px #cdd2d5,
+       	              -6px 7px #808d93,
+       	              -7px 6px #cdd2d5,
+       	              -7px 8px #808d93,
+       	              -8px 7px #cdd2d5;
+}
+
+
+
+
+.lastmessage{
+    margin-top: 20px;
+    color: rgb(129, 129, 129);
+    font-size: x-large;
+    font-family: Abel;
+}
+
+

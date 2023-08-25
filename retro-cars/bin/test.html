@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        width: 100%;
+      }
+      .reveal-animation {
+        opacity: 0;
+        transform: translateY(150%);
+      }
+      .reveal{
+        animation: revealAnimation ease 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      .animate-delayed {
+        animation-delay: 0.1s;
+      }
+      @keyframes revealAnimation {
+        0% {
+          transform: translateY(150%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0%);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div 
+        style="width: 40%; margin: 1rem 5%"
+      >
+        <img id="image" src="index.jpeg" alt="" style="width: 100% ;" />
+      </div>
+      <div style="width: 40%; margin: 1rem 5%">
+        <h2
+          id="animate-heading"
+          class="reveal-animation"
+          style="max-height: 30px; height: 30px"
+        >
+          Vintage car
+        </h2>
+        <p id="animate-text" class="reveal-animation animate-delayed">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+          magnam consequuntur repellendus ipsum error reiciendis vel eum cumque
+          praesentium numquam odit dicta mollitia sapiente laudantium aperiam
+          doloribus, quidem dignissimos iusto voluptatum impedit facere officia
+          dolorem debitis. Quam cum veniam, dolorem et iste praesentium quasi,
+          nulla eveniet in numquam corporis, ut reprehenderit dicta. Corporis
+          laudantium aspernatur laboriosam eaque. Debitis hic in esse cumque!
+          Natus provident cupiditate, iure ipsa quae corporis nihil itaque,
+          aliquam at voluptates voluptatum eos minima sunt quam aspernatur
+          maiores dicta molestiae necessitatibus? Cumque molestiae voluptatibus
+          possimus veritatis. Consequuntur corrupti ipsa vitae fugiat in
+          excepturi ipsam dolore est eius.
+        </p>
+      </div>
+    </div>
+    <script>
+      function callbackFunc(entries, observer) {
+        entries.forEach(entry => {
+          console.log(entry.intersectionRatio);
+          if(entry.intersectionRatio>=0.2){
+            if(!entry.target.classList.contains("reveal")){
+              entry.target.classList.add("reveal");
+            }
+          }
+        });
+      }
+      let options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2,
+      };
+      let observer = new IntersectionObserver(callbackFunc, options);
+      observer.observe(document.getElementById('animate-heading'));
+      observer.observe(document.getElementById('animate-text'));
+    </script>
+  </body>
+</html>

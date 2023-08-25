@@ -1,0 +1,139 @@
+.service {
+  background-color: whitesmoke;
+  width: 100%;
+}
+.service img {
+  margin: 1rem;
+  height: max-content;
+  width: max-content;
+}
+
+.company-name {
+  position: relative;
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  font-weight: lighter;
+  line-height: 80vh;
+  height: 80vh;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+}
+.company-name h1 {
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.customers {
+  display: flex;
+  background-color: #121212;
+  color: white;
+  padding: 5%;
+}
+
+.customers > div > div > div > div {
+  display: flex;
+}
+
+.customers > div > div > div > div > p {
+  max-width: 50%;
+  margin: 2rem;
+}
+
+
+.carousel-item > div > div{
+  max-width: 50%;
+}
+
+
+.customers > div > div > div > div > img {
+  width: 25%;
+  border-radius: 25%;
+}
+
+.customers > div > div > div > div > div {
+  padding: 3rem;
+}
+
+.chunks{
+  height: 75vh;
+}
+
+.white{
+  color: #d1b305;
+  background-color: rgba(0, 0, 0, 0.57);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+
+.open-sale{
+  background-color: white; 
+  color: #d1b305; 
+  border: 2px solid #d1b305;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  align-self: end;
+}
+
+.open-sale a{
+  color: #d1b305;
+  text-decoration: none;
+}
+
+.open-sale:hover {
+  background-color: #d1b305;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  text-decoration: none;
+}
+
+
+.alone-color{
+  color: #9096a2;
+}
+#footer{
+  margin: 4rem 0 0 0;
+
+}
+.main-content{
+  background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .chunks{
+    height: auto;
+    padding: 2rem 0 0 0;
+  }
+  #promise img{
+    margin: 0 5%;
+    width: 90% !important;
+    height: auto !important;
+  }
+  #promise>div{
+    padding: 0 1rem;
+  }
+  #service-2 .text-end{
+    text-align: start !important;
+  }
+  .sizing-index-page{
+    width: 80% !important;
+  }
+  .customers > div > div > div > div {
+    display: block;
+    text-align: center;
+  }
+  .customers > div > div > div > div >div{
+    padding: 3rem 1rem !important;
+    max-width: 100% !important;
+    margin: auto;
+  }
+  .customers img{
+    width: 50% !important;
+    margin: auto;
+  }
+}

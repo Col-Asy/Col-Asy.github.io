@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #222525;
+    margin: 0;
+    top: 0;
+}
+
+
+body{
+    overflow-x: clip;
+    display: flow-root;
+    overflow-wrap: break-word;
+    height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 .25rem .5rem .25rem;
+    background: #f8f5f2;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+img{
+    height: auto;
+    width: 100%;
+}
+
+a{
+    .nav-button:hover{
+    background: #078080;
+    color: #232323;
+    border-radius: 2rem;
+    transition: ease-in .25s;
+    }
+}
+
+.introduction{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.introduction img#banner{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -100;
+}
+
+.banner-content{
+    position: relative;
+    font-size: larger;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: end;
+    margin-top: 4rem;
+}
+
+.salutations{
+    position: absolute;
+    display: flex;
+    top: 10%;
+    right: 35%;
+}
+
+.intro{
+    position: absolute;
+    right: 25%;
+    top: 20%;
+}
+
+.name{
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    font-variant: small-caps;
+    font-size: 3rem;
+    font-weight: bolder;
+
+}
+.skill{
+    margin: 25% 25% 0 0;
+}
+
+.skill-name{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.icon-above{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: .5rem 1.5rem;
+}
+
+img#profile-pic{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: -1;
+    
+    /* border-radius: 5rem;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+
+    border-radius: 999px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient( from var(--from), var(--color1), var(--color2) var(--distance), transparent var(--distance)); */
+    
+
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    object-position: 0 40%;
+}
+
+
+.nav-bar{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+    font-variant: small-caps;
+
+    .bar{
+        display: flex;
+        margin-right: 2rem;
+        align-items: center;
+
+        .nav-button{
+            margin: 0 0 0 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;
+            width: 7rem;
+
+            .fa-solid{
+                margin: 0 .25rem 0 0;
+            }
+        }
+
+    }
+    
+}
+
+.foot-bar{
+    position: absolute;
+    top: 100%;
+}
+

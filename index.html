@@ -16,17 +16,25 @@
 <body>
     <div class="nav-bar bottom-bar">
         <div class="logo">
-            <a href="#">Logo</a>
+            <a href="#"><img src="Images/logo-light-transformed-wo-txt.jpeg" alt="Logo"></a>
         </div>
 
-        <div class="bar">
+        <ul class="nav">
+            <li><a href="#introduction"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#about-section"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#projects-section"><i class="fa-solid fa-book-open"></i> Projects</a></li>
+            <li><a href="#contact-section"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+            <li><a href="#college-section"><i class="fa-solid fa-book-open-reader"></i> College</a></li>
+        </ul>
+        <!-- <div class="bar">
             <a href="#"><div class="nav-button nav-button-home"><i class="fa-solid fa-house"></i> Home</div></a>
             <a href="#"><div class="nav-button nav-button-about"><i class="fa-solid fa-user"></i> About</div></a>
+            <a href="#"><div class="nav-button nav-button-home"><i class="fa-solid fa-book-open"></i> Projects</div></a>
             <a href="#"><div class="nav-button nav-button-contact"><i class="fa-solid fa-address-book"></i> Contact</div></a>
-        </div>
+        </div> -->
     </div>
     
-    <div class="introduction">
+    <div class="introduction" id="introduction">
         <div class="back-img-container">
             <img src="Images\header-banner-light.png" alt="Banner" class="back-image">
         </div>
@@ -34,7 +42,7 @@
         <div class="banner-content">
 
             <p class="salutations">
-                Namaste 🙏 !
+                Ram Ram Ji 🙏 !
             </p>
 
             <p class="intro">
@@ -53,24 +61,29 @@
             </p>
 
         </div>
+
         <div class="profile-pic">
             <img src="Images\front.jpg" alt="Profile Image" id="profile-pic">
         </div>
     </div>
 
-    <div class="about-section" id="about">
+    <div class="about-section" id="about-section">
         <div class="common">
             <div class="title">
                 <h2>About</h2>
             </div>
     
             <div class="content">
-                Hi, I’m a first-year B.Tech. student in Electronics and     Communication Engineering with Data Science specialization. I’m     passionate about using software and web development to solve    real-world challenges. 
-                <!-- Some of my projects include an AI-based web app that   diagnoses diseases, a software that curates tweets, and a web     app that customizes your diet plan. You can check them out in   the projects section. -->
-                <br><br>
-                I have skills in various programming languages and frameworks,  such as Python, Java, C, HTML, CSS, JavaScript, MySQL, React,    and Bootstrap. I’m always keen to learn new technologies and   improve my skillset. I also enjoy playing basketball, guitar,     and chess, as well as traveling and exploring new places and    cultures. I believe these hobbies help me develop my   creativity, teamwork, communication, and critical thinking    skills, and also help me discover myself better.
-                <br><br>
-                I’m looking for opportunities to collaborate with other     students, professionals, and organizations on exciting projects     and initiatives. I’m open to internships, freelance work,   hackathons, competitions, and mentorship programs. Feel free to   connect with me and reach out to me via email or message. I’d     love to hear from you!
+                <div class="para-1">
+                    Hi, I’m a first-year B.Tech. student in Electronics and     Communication Engineering with Data Science specialization. I’m     passionate about using software and web development to solve    real-world challenges. Some of my projects include an AI-based web app that   diagnoses diseases, a software that curates tweets, and a web     app that customizes your diet plan. You can check them out in   the projects section.
+                </div>
+                <div class="para-2">
+                    I have skills in various programming languages and frameworks,  such as Python, Java, C, HTML, CSS, JavaScript, MySQL, React,    and Bootstrap. I’m always keen to learn new technologies and   improve my skillset. I also enjoy playing basketball, guitar,     and chess, as well as traveling and exploring new places and    cultures. I believe these hobbies help me develop my   creativity, teamwork, communication, and critical thinking    skills, and also help me discover myself better.
+                </div>
+                
+                <div class="para-3">
+                    I’m looking for opportunities to collaborate with other     students, professionals, and organizations on exciting projects     and initiatives. I’m open to internships, freelance work,   hackathons, competitions, and mentorship programs. Feel free to   connect with me and reach out to me via email or message. I’d     love to hear from you!
+                </div>
             </div>
 
             <div class="main-image">
@@ -79,7 +92,83 @@
         </div>
     </div>
 
-    <div class="contact-section">
+    <div class="projects-section" id="projects-section">
+        <div class="head">
+            <h2>Projects</h2>
+        </div>
+
+        <div class="cards-show">
+            <div class="card">
+                <div class="card-img">
+                    <img src="Images/project-1.jpg" alt="Project 1">
+                </div>
+
+                <div class="card-details">
+                  <p class="text-title">SCENT Motors</p>
+                  <p class="text-body">This marked the starting of my Development Journey. This whole site was designed using basic HTML and CSS</p>
+                </div>
+                <button class="card-button">More info</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="Images/project-2.jpg" alt="Project 2">
+                </div>
+                
+                <div class="card-details">
+                  <p class="text-title">Nutrino</p>
+                  <p class="text-body">This project was more on the hardware side, to produce a product which could benefit in the agriculture sector</p>
+                </div>
+                <button class="card-button">More info</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="Images/project-3.jpg" alt="Project 3">
+                </div>
+                
+                <div class="card-details">
+                  <p class="text-title">20-20-20 Rule</p>
+                  <p class="text-body">This project was developed following the basic 20-20-20 rule of using screen devices using basic UI.</p>
+                </div>
+                <button class="card-button">More info</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="Images/project-4.jpg" alt="Project 4">
+                </div>
+                
+                <div class="card-details">
+                  <p class="text-title">Bounty Carzzz</p>
+                  <p class="text-body">A project made in a day for the on spot competition.</p>
+                </div>
+                <button class="card-button">More info</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="Images/project-5.jpg" alt="Project 5">
+                </div>
+                
+                <div class="card-details">
+                  <p class="text-title">Med Friend</p>
+                  <p class="text-body">First time integrating AI into the project, suggesting possible illness, on basis of symtopms and diet.</p>
+                </div>
+                <button class="card-button">More info</button>
+            </div>
+
+            <!-- <div class="card">
+                <div class="card-details">
+                  <p class="text-title">Card title</p>
+                  <p class="text-body">Here are the details of the card</p>
+                </div>
+                <button class="card-button">More info</button>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="contact-section" id="contact-section">
         <div class="head">
             <h2>Let's Connect</h2>
         </div>
@@ -123,7 +212,7 @@
     
             <div class="contact-details-section">
                 <div class="content">
-                    <h4>Get in touch Directly!</h4>
+                    <h4>Get in touch Directly</h4>
                     <p>
                         Want a quciker response, just reach out through the following!
                     </p>
@@ -138,16 +227,31 @@
                 </div>
     
                 <div class="accounts">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-slack"></i>
-                    <i class="fa-brands fa-discord"></i>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-slack"></i></a>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="college-section" id="college-section">
+        <div class="head">
+            <h2>College</h2>
+        </div>
+
+        <div class="content">
+            <h4>S.R.M. Institute of Science and Technology, Kattankulathur</h4>
+
+            <p>Pursuing B.Tech. in ECE with specialization in Data Science from here, and currently in SEM 2</p>
+
+            <p class="text"><b>SEM-I GPA:</b> 9.11</p>
+        </div>
+    </div>
+
 
 
     <!-- <div class="foot-bar">

@@ -442,7 +442,7 @@ h4{
 }
 
 .introduction{
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100%;
 
@@ -457,7 +457,7 @@ h4{
         position: fixed;
         top: 0;
         z-index: -100;
-        background-image: url(IMAGES/header-banner-light.jpg);
+        background-image: url(Images/header-banner-light.png);
         width: 100%;
         height: 100%;
         background-size: contain;
@@ -468,69 +468,77 @@ h4{
     }
 
     .banner-content{
-        position: relative;
-        font-size: larger;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        justify-items: end;
-        margin-top: 4rem;
 
-
-        .salutations{
-            position: absolute;
-            display: flex;
-            top: 10%;
-            right: 35%;
+        .banner-content-text{
+            /* position: relative; */
             font-size: larger;
-            font-weight: 500;
-        }
-
-        .intro{
-            position: absolute;
-            right: 25%;
-            top: 30%;
-            font-size: larger;
+            width: fit-content;
+            height: 100%;
+            display: grid;
+            justify-items: end;
+            margin-top: 4rem;
+    
+    
+            .salutations{
+                /* position: absolute; */
+                display: flex;
+                top: 10%;
+                right: 35%;
+                font-size: larger;
+                font-weight: 500;
+                width: 100%;
+            }
+    
+            .intro{
+                /* position: absolute; */
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                font-size: larger;
+            }
         }
     }
 }
 
-
-
 .name{
-    position: absolute;
-    right: 15%;
-    top: 35%;
     font-variant: small-caps;
     font-size: 3rem;
     font-weight: bolder;
+    text-align: center;
 }
+
 .skill{
-    margin: 25% 25% 0 0;
+    /* margin-top: 2rem; */
     font-weight: 500;
-    font-size: larger;
+    width: 100%;
+    span{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .skill-name{
     display: inline-flex;
     align-items: center;
-    margin-right: 10%;
+    /* margin-right: 10%; */
     font-weight: 500;
+    width: fit-content;
 }
 
 .icon-above{
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    margin: .5rem 1.5rem;
+    margin: .5rem 1rem;
+    font-size: clamp(.5rem, 2.5vw, 1.5rem);
+}
+.profile-pic{
+    height: 100%;
 }
 
 img#profile-pic{
-    position: absolute;
-    top: 5%;
-    left: 15%;
     z-index: -1;
     
     
@@ -547,17 +555,13 @@ img#profile-pic{
     background: conic-gradient( from var(--from), var(--color1), var(--color2) var(--distance), transparent var(--distance)); */
     
 
+    width: 40%;
     height: 90%;
-    width: auto;
-    object-fit: cover;
-    /* object-position: 0 40%; */
+
 }
 
 .about-section{
-    position: relative;
     background: #f8f5f2;
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: auto;
     margin-top: 8rem;
@@ -566,52 +570,49 @@ img#profile-pic{
 
 
     .common{
-        display: flex;
         width: 100%;
         height: auto;
+
+        .content{
+            float: left;
+        }
     
-        .title{
-            position: absolute;
+        /* .title{
             left: 62%;
             top: 5%;
             padding: 1%;
             padding-right: 3rem;
             padding-top: 3%;
-        }
+        } */
 
         .main-image{
-            position: absolute;
-            left: 40%;
-            top: 15%;
+            float: right;
+            clip: left;
             width: 40%;
             height: fit-content;
             display: flex;
             justify-content: center;
-            margin: 5rem 0 0 5rem;
+            /* margin: 5rem 0 0 5rem; */
+
+            .title{
+                height: fit-content;
+            }
         }
     }
 
     .content{
-        width: 30%;
+        width: 100%;
         padding: 5%;
         padding-left: 1%;
         padding-right: 0;
         padding-bottom: 3%;
-        margin-left: 5rem;
+        /* margin-left: 5rem; */
         display: flex;
         flex-wrap: wrap;
         align-content: start;
-
-
-        .para-2{
-            margin-top: .5rem;
-        }
-
-        .para-3{
-            /* position: absolute; */
-            width: 100%;
-            bottom: 0;
-            top: 85%;
+        float: left;
+        p{
+            width: fit-content;
         }
     }
 }

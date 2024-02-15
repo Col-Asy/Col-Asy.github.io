@@ -15,9 +15,9 @@
 <script src="style.js"></script>
 
 <body>
-    <div class="nav-bar bottom-bar">
+    <!-- <div class="nav-bar bottom-bar">
         <div class="logo">
-            <a href="#"><img src="Images/logo-light-transformed-wo-txt.jpeg" alt="Logo"></a>
+            <a class="navbar-brand" href="#"><img src="Images/logo-light-transformed-wo-txt.jpeg" alt="Logo"></a>
         </div>
 
         <ul class="nav">
@@ -27,73 +27,69 @@
             <li><a href="#contact-section"><i class="fa-solid fa-address-book"></i> Contact</a></li>
             <li><a href="#college-section"><i class="fa-solid fa-book-open-reader"></i> College</a></li>
         </ul>
-        <!-- <div class="bar">
-            <a href="#"><div class="nav-button nav-button-home"><i class="fa-solid fa-house"></i> Home</div></a>
-            <a href="#"><div class="nav-button nav-button-about"><i class="fa-solid fa-user"></i> About</div></a>
-            <a href="#"><div class="nav-button nav-button-home"><i class="fa-solid fa-book-open"></i> Projects</div></a>
-            <a href="#"><div class="nav-button nav-button-contact"><i class="fa-solid fa-address-book"></i> Contact</div></a>
-        </div> -->
-    </div>
+    </div> -->
     
     <div class="introduction" id="introduction">
         <div class="back-img-container">
             <img src="Images\header-banner-light.png" alt="Banner" class="back-image">
         </div>
-        
-        <div class="banner-content">
 
-            <p class="salutations">
-                Ram Ram Ji 🙏 !
-            </p>
-
-            <p class="intro">
-                This is 
-                <div class="name">Ayush Barnwal</div>
-            </p>
-
-            <p class="skill">
-                Skill Sets
-                <div class="skill-name">
-                    <div class="icon-above">Coding <i class="fa-solid fa-code"></i></div> | 
-                    <div class="icon-above">Photography <i class="fa-solid fa-camera-retro"></i></div> | 
-                    <div class="icon-above">Guitar <i class="fa-solid fa-guitar"></i></div> | 
-                    <div class="icon-above">Basketball <i class="fa-solid fa-basketball"></i></div>
+        <div class="banner-content container-fluid d-md-flex align-items-center mt-lg-5 pt-lg-5">
+            <div class="profile-pic d-flex justify-content-center">
+                <img src="Images\front.jpg" alt="Profile Image" id="profile-pic" class="object-fit-cover img-fluid">
+            </div>
+            
+            <div class="banner-content-text container-fluid mx-10 me-md-3">
+    
+                <div class="salutations justify-content-center justify-content-md-start ms-md-3">
+                    <h3>Ram Ram Ji 🙏 !</h3>
                 </div>
-            </p>
-
-        </div>
-
-        <div class="profile-pic">
-            <img src="Images\front.jpg" alt="Profile Image" id="profile-pic">
+    
+                <div class="intro align-items-center align-items-md-start">
+                    <span class="ms-0 ms-md-5">This is</span> 
+                    <div class="name ms-0 ms-5">Ayush Barnwal</div>
+                </div>
+    
+                <div class="skill container-fluid d-flex flex-column align-items-center align-items-md-end mt-3 mt-md-5">
+                    <span><h4>Skill Sets</h4></span>
+                    <div class="skill-name container-fluid justify-content-center justify-content-md-end flex-wrap flex-md-nowrap">
+                        <div class="icon-above">Coding <i class="fa-solid fa-code"></i></div> | 
+                        <div class="icon-above">Photography <i class="fa-solid fa-camera-retro"></i></div> | 
+                        <div class="icon-above">Guitar <i class="fa-solid fa-guitar"></i></div> | 
+                        <div class="icon-above">Basketball <i class="fa-solid fa-basketball"></i></div>
+                    </div>
+                </div>
+    
+            </div>
         </div>
     </div>
 
-    <div class="about-section" id="about-section">
-        <div class="common">
-            <div class="title">
-                <h2>About</h2>
-            </div>
-    
-            <div class="content">
-                <div class="para-1">
+    <div class="about-section container-fluid" id="about-section">
+        <div class="d-flex d-sm-inline-flex flex-wrap-reverse flex-md-nowrap flex-lg-nowrap flex-xl-nowrap flex-xxl-nowrap common">    
+            <div class="p-2 flex-shrink-1 content">
+                <p class="para-1">
                     Hi, I’m a first-year B.Tech. student in Electronics and     Communication Engineering with Data Science specialization. I’m     passionate about using software and web development to solve    real-world challenges. Some of my projects include an AI-based web app that   diagnoses diseases, a software that curates tweets, and a web     app that customizes your diet plan. You can check them out in   the projects section.
-                </div>
-                <div class="para-2">
+                </p>
+
+                <p class="para-2">
                     I have skills in various programming languages and frameworks,  such as Python, Java, C, HTML, CSS, JavaScript, MySQL, React,    and Bootstrap. I’m always keen to learn new technologies and   improve my skillset. I also enjoy playing basketball, guitar,     and chess, as well as traveling and exploring new places and    cultures. I believe these hobbies help me develop my   creativity, teamwork, communication, and critical thinking    skills, and also help me discover myself better.
-                </div>
+                </p>
                 
-                <div class="para-3">
+                <p class="para-3">
                     I’m looking for opportunities to collaborate with other     students, professionals, and organizations on exciting projects     and initiatives. I’m open to internships, freelance work,   hackathons, competitions, and mentorship programs. Feel free to   connect with me and reach out to me via email or message. I’d     love to hear from you!
-                </div>
+                </p>
             </div>
 
             <div class="main-image">
-                <img src="Images/about-img-removebg-preview.jpeg"   alt="profile-pic">
+                <figure class="figure">
+                    <figcaption style="display: flex; justify-content: center;"><h2>About</h2></figcaption>
+                    <img src="Images/about-img-removebg-preview.jpeg" class="img-fluid" alt="...">
+                </figure>
             </div>
         </div>
     </div>
 
-    <div class="projects-section" id="projects-section">
+    <div class="projects-section container-fluid" id="projects-section">
         <div class="head">
             <h2>Projects</h2>
         </div>
@@ -108,7 +104,17 @@
                   <p class="text-title">SCENT Motors</p>
                   <p class="text-body">This marked the starting of my Development Journey. This whole site was designed using basic HTML and CSS</p>
                 </div>
-                <button class="card-button">More info</button>
+                <button class="card-button">
+                    <span class="visit-link">
+                        <i class="fa-solid fa-window-maximize"><a href=""></a></i>
+                        <span class="link-title"> Visit Site</span>
+                    </span>
+                    <span class="separator">|</span> 
+                    <span class="visit-link">
+                        <i class="fa-brands fa-github-alt"><a href=""></a></i>
+                        <span class="link-title"> Project Link</span>
+                    </span>
+                </button>
             </div>
 
             <div class="card">
@@ -120,7 +126,17 @@
                   <p class="text-title">Nutrino</p>
                   <p class="text-body">This project was more on the hardware side, to produce a product which could benefit in the agriculture sector</p>
                 </div>
-                <button class="card-button">More info</button>
+                <button class="card-button">
+                    <span class="visit-link">
+                        <i class="fa-solid fa-window-maximize"><a href=""></a></i>
+                        <span class="link-title"> Visit Site</span>
+                    </span>
+                    <span class="separator">|</span> 
+                    <span class="visit-link">
+                        <i class="fa-brands fa-github-alt"><a href=""></a></i>
+                        <span class="link-title"> Project Link</span>
+                    </span>
+                </button>
             </div>
 
             <div class="card">
@@ -132,7 +148,17 @@
                   <p class="text-title">20-20-20 Rule</p>
                   <p class="text-body">This project was developed following the basic 20-20-20 rule of using screen devices using basic UI.</p>
                 </div>
-                <button class="card-button">More info</button>
+                <button class="card-button">
+                    <span class="visit-link">
+                        <i class="fa-solid fa-window-maximize"><a href=""></a></i>
+                        <span class="link-title"> Visit Site</span>
+                    </span>
+                    <span class="separator">|</span> 
+                    <span class="visit-link">
+                        <i class="fa-brands fa-github-alt"><a href=""></a></i>
+                        <span class="link-title"> Project Link</span>
+                    </span>
+                </button>
             </div>
 
             <div class="card">
@@ -144,7 +170,17 @@
                   <p class="text-title">Bounty Carzzz</p>
                   <p class="text-body">A project made in a day for the on spot competition.</p>
                 </div>
-                <button class="card-button">More info</button>
+                <button class="card-button">
+                    <span class="visit-link">
+                        <i class="fa-solid fa-window-maximize"><a href="https://col-asy.github.io/webDesign-projects/retro-cars/HTML/index.html"></a></i>
+                        <span class="link-title"> Visit Site</span>
+                    </span>
+                    <span class="separator">|</span> 
+                    <span class="visit-link">
+                        <i class="fa-brands fa-github-alt"><a href="https://github.com/Col-Asy/webDesign-projects/tree/master/retro-cars"></a></i>
+                        <span class="link-title"> Project Link</span>
+                    </span>
+                </button>
             </div>
 
             <div class="card">
@@ -156,7 +192,17 @@
                   <p class="text-title">Med Friend</p>
                   <p class="text-body">First time integrating AI into the project, suggesting possible illness, on basis of symtopms and diet.</p>
                 </div>
-                <button class="card-button">More info</button>
+                <button class="card-button">
+                    <span class="visit-link">
+                        <i class="fa-solid fa-window-maximize"><a href=""></a></i>
+                        <span class="link-title"> Visit Site</span>
+                    </span>
+                    <span class="separator">|</span> 
+                    <span class="visit-link">
+                        <i class="fa-brands fa-github-alt"><a href=""></a></i>
+                        <span class="link-title"> Project Link</span>
+                    </span>
+                </button>
             </div>
 
             <!-- <div class="card">
@@ -169,13 +215,13 @@
         </div>
     </div>
 
-    <div class="contact-section" id="contact-section">
+    <div class="contact-section container-fluid" id="contact-section">
         <div class="head">
             <h2>Let's Connect</h2>
         </div>
 
-        <div class="cards">
-            <div class="form-fillup-section">
+        <div class="cards container container-fluid">
+            <div class="form-fillup-section container-fluid">
                 <div class="content">
                     <h4>Fill out the Form</h4>
                     <p>
@@ -211,7 +257,7 @@
                 </div>
             </div>
     
-            <div class="contact-details-section">
+            <div class="contact-details-section container-fluid">
                 <div class="content">
                     <h4>Get in touch Directly</h4>
                     <p>
@@ -228,18 +274,18 @@
                 </div>
     
                 <div class="accounts">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/Col-Asy"><i class="fa-brands fa-github"></i></a>
+                    <a href="www.linkedin.com/in/vanshu-barnwal"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/vanshu_barnwal"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-slack"></i></a>
+                    <a href="https://livewebdevbat-yhx3976.slack.com/team/U06GGM2UCAV"><i class="fa-brands fa-slack"></i></a>
                     <a href="#"><i class="fa-brands fa-discord"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="college-section" id="college-section">
+    <div class="college-section container-fluid" id="college-section">
         <div class="head">
             <h2>College</h2>
         </div>

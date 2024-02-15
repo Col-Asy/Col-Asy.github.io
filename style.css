@@ -364,11 +364,12 @@ h4{
     font-size: 1.75rem;
     font-variant: small-caps;
 
-    .logo a img{
-        position: absolute;
-        height: 200%;
-        width: auto;
-        margin-left: 2rem;
+    .logo {
+
+        a img{
+        /* position: absolute; */
+        width: 40%;
+        }
     }
 
     .nav {
@@ -575,6 +576,7 @@ img#profile-pic{
 
         .content{
             float: left;
+            max-width: 50%;
         }
     
         /* .title{
@@ -588,11 +590,13 @@ img#profile-pic{
         .main-image{
             float: right;
             clip: left;
-            width: 40%;
+            /* width: 30%; */
+            height: 100%;
             height: fit-content;
             display: flex;
             justify-content: center;
             /* margin: 5rem 0 0 5rem; */
+            text-align: center;
 
             .title{
                 height: fit-content;

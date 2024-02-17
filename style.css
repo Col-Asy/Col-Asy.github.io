@@ -448,7 +448,7 @@ h4{
     } */  
 }
 
-@media screen and (max-width:1024px) {
+/* @media screen and (max-width:1024px) {
     .nav-button {
       display: flex;
       cursor: pointer;
@@ -469,7 +469,7 @@ h4{
         gap: 10vh;
     }
     
-}
+} */
 
 .introduction{
     width: 100%;

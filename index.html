@@ -14,6 +14,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="icon" href="Images/favicon-dark.ico">
 <script src="style.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 <body>
     <div class="nav-bar bottom-bar">
@@ -21,13 +22,18 @@
             <a class="navbar-brand" href="#"><img src="Images/logo-light-transformed-wo-txt.jpeg" alt="Logo" class="ms-0 ms-md-3 img-fluid"></a>
         </div>
 
-        <ul class="nav">
+        <ul class="nav" id="navigation-items">
             <li><a href="#introduction"><i class="fa-solid fa-house"></i> Home</a></li>
             <li><a href="#about-section"><i class="fa-solid fa-user"></i> About</a></li>
             <li><a href="#projects-section"><i class="fa-solid fa-book-open"></i> Projects</a></li>
             <li><a href="#contact-section"><i class="fa-solid fa-address-book"></i> Contact</a></li>
             <li><a href="#college-section"><i class="fa-solid fa-book-open-reader"></i> College</a></li>
         </ul>
+
+        <div class="nav-button hidden">
+            <span class="material-symbols-outlined text-7xl" id="open">code</span>
+            <span class="material-symbols-outlined text-7xl" id="close">close</span>
+        </div>
     </div>
     
     <div class="introduction" id="introduction">
@@ -231,22 +237,22 @@
                 <div class="form-fillup">
                     <form class="form">
                         <div class="group">
-                            <input placeholder="‎" type="text" required="">
+                            <input placeholder="‎" type="text" required="" class="caret-orange-800">
                             <label for="name">Name</label>
                         </div>
     
                         <div class="group">
-                            <input placeholder="‎" type="email" id="email" name="email" required="">
+                            <input placeholder="‎" type="email" id="email" name="email" required="" class="caret-orange-800">
                             <label for="email">Email</label>
                         </div>
     
                         <div class="group">
-                            <input placeholder="‎" type="tel" id="tel" name="tel" required="" pattern="[1-9] {1} [0-9] {9}">
+                            <input placeholder="‎" type="tel" id="tel" name="tel" required="" pattern="[1-9] {1} [0-9] {9}" class="caret-orange-800">
                             <label for="tel">Phone No.</label>
                         </div>
 
                         <div class="group">
-                            <textarea placeholder="‎" id="comment" name="comment" rows="5" required=""></textarea>
+                            <textarea placeholder="‎" id="comment" name="comment" rows="5" required="" class="caret-orange-800"></textarea>
                             <label for="comment">Comment</label>
                         </div>
                             
@@ -323,4 +329,20 @@
         </div>
     </div> -->
 </body>
+
+<script>
+    let openButton = document.querySelector('#open');
+    let closeButton = document.querySelector('#close');
+    let navigationItems = document.querySelector('#navigation-items');
+
+    const navButtonEvent = (navigation, close, open) => {
+        navigationItems.style.display = navigation;
+        closeButton.style.display = close;
+        openButton.style.display = open;
+    };
+
+    openButton.addEventListener('click', () => navButtonEvent("flex", "block", "none"));
+    closeButton.addEventListener('click', () => navButtonEvent("none", "none", "block"));
+</script>
+
 </html>

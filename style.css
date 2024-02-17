@@ -440,6 +440,35 @@ h4{
       }
 
     
+    /* .nav-button .material-symbols-outlined{
+        height: fit-content;
+        text-align: center;
+        border: 2px solid #232323;
+        border-radius: 2px;
+    } */  
+}
+
+@media screen and (max-width:1024px) {
+    .nav-button {
+      display: flex;
+      cursor: pointer;
+      z-index: 3;
+    }
+    .nav-button #close {
+      display: none;
+    }
+    .nav{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: calc(100vh - 58px);
+        padding-top: 60px;
+        gap: 10vh;
+    }
+    
 }
 
 .introduction{

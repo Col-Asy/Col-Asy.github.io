@@ -1,0 +1,84 @@
+[
+    {
+      "name": "SCENT Motors",
+      "body": "This marked the starting of my Development Journey. TWhole site was designed using basic HTML and CSS",
+      "img": "Images/project-imgs/project-1.jpg",
+      "site": "https://col-asy.github.io/webDesign-projects/SCENT-motors/",
+      "github": "https://github.com/Col-Asy/webDesign-projects/tree/master/SCENT-motors",
+      "contribs": [
+       "Col-Asy",
+        "mudit67"
+      ]
+    },
+    {
+      "name": "Nutrino",
+      "body": "This project was more on the hardware side, to produce a product which could benefit in the agriculture sector",
+      "img": "Images/project-imgs/project-2.jpg",
+      "site": null,
+      "github": "https://github.com/Col-Asy/webDesign-projects/tree/master/Project-NutrientChecker",
+      "contribs": [
+        "Col-Asy"
+      ]
+    },
+    {
+      "name": "Eye Chill",
+      "body": "This project was developed following the basic 20-20-20 rule of using screen devices using basic UI",
+      "img": "Images/project-imgs/project-3.jpg",
+      "site": null,
+      "github": "https://github.com/Col-Asy/project-11-Term2",
+      "contribs": [
+        "Col-Asy",
+        "mudit67",
+        "satuiro"
+      ]
+    },
+    {
+      "name": "Bounty Carzzz",
+      "body": "A project made in a day for an on spot web-dev competition.",
+      "img": "Images/project-imgs/project-4.jpg",
+      "site": "https://col-asy.github.io/webDesign-projects/retro-cars/HTML/",
+      "github": "https://github.com/Col-Asy/webDesign-projects/tree/master/retro-cars",
+      "contribs": [
+        "Col-Asy",
+        "mudit67"
+      ]
+    },
+    {
+      "name": "Med Friend",
+      "body": "First time integrating AI into the project, suggesting possible illness, on basis of symtopms and hence diet.",
+      "img": "Images/project-imgs/project-5.jpg",
+      "site": null,
+      "github": "https://github.com/satuiro/medfriend",
+      "contribs": [
+        "Col-Asy",
+        "mudit67",
+        "satuiro"
+      ]
+    },
+    {
+      "name": "ConvoSpace",
+      "body": "SaaS platform for virtual networking with web sockets and Twitter integration.",
+      "img": "Images/project-imgs/project-6.jpg",
+      "site": null,
+      "github": "@james",
+      "contribs": [
+        "Col-Asy",
+        "mudit67",
+        "satuiro",
+        "Brainiac101"
+      ]
+    },
+    {
+      "name": "SpendWise",
+      "body": "SpendWise: Real-time expense management with Plaid API integration and categorized budget tracking.",
+      "img": "Images/project-imgs/project-7.jpg",
+      "site": null,
+      "github": "@james",
+      "contribs": [
+        "Col-Asy",
+        "mudit67",
+        "satuiro",
+        "Brainiac101"
+      ]
+    }
+  ]

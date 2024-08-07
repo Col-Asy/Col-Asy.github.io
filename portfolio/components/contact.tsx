@@ -48,7 +48,7 @@ const ContactSection = () => {
 
                         <button className="button-submit w-full md:w-1/2 md:ml-[25%]" role="button">
                             <span className="button-text">Submit</span>
-                            <span className="button-text-hover">Let's Connect</span>
+                            <span className="button-text-hover">Let&apos;s Connect</span>
                         </button>
                     </form>
                 </div>

@@ -57,7 +57,7 @@ const ExpandTile: React.FC<ExpandTileProps> = ({
             <h3 className="text-lg font-semibold text-neutral-600 dark:text-neutral-400">Contributors:</h3>
             <ul className="flex space-x-2">
               {contribs.map((contrib, index) => (
-                <a href={`https://github.com/${contrib}`} target="_blank">
+                <a href={`https://github.com/${contrib}`} target="_blank" key={index}>
                   <li key={index}>
                     <img
                     src={`https://github.com/${contrib}.png`}
